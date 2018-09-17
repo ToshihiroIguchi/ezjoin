@@ -10,10 +10,11 @@ shinyUI(
     titlePanel("Easy join"),
     sidebarLayout(
       sidebarPanel(
-        fileInput("file1", "Choose csv file1", accept = file.input.accept),
-        fileInput("file2", "Choose csv file2", accept = file.input.accept),
+        fileInput("file1", "CSV file1", accept = file.input.accept),
+        fileInput("file2", "CSV file2", accept = file.input.accept),
         tags$hr(),
-        htmlOutput("method"),
+        htmlOutput("method1"),
+        htmlOutput("method2"),
         htmlOutput("by")
       ),
       
@@ -22,7 +23,7 @@ shinyUI(
                     tabPanel("CSV1", DT::dataTableOutput("table1")),
                     tabPanel("CSV2", DT::dataTableOutput("table2")),
                     tabPanel("JOIN", DT::dataTableOutput("table.merge"),
-                             downloadButton('download', 'Download')),
+                             downloadButton("download", "Download")),
                     tabPanel("Explanation", includeMarkdown("explanation.md"))
                     
         )
