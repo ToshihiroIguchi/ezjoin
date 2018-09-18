@@ -12,6 +12,9 @@ Join matching rows from CSV2 to CSV1.
 #### Innter Join
 Join data. Retain only rows in both sets.
 
+#### Full Join
+Join data. Retain all values, all rows.
+
 ### Filtering Joins
 #### Semi Join
 All rows in a that have CSV1 match in CSV2.
@@ -31,7 +34,7 @@ Rows that appear in CSV1 but not CSV2.
 
 ### Binding
 #### Bind Rows
-Append z to y as new rows.
+Append CSV2 to CSV1 as new rows.
 
 #### Bind Cols
 Append CSV2 to CSV1 as new columns.
