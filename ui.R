@@ -7,11 +7,13 @@ file.input.accept <- c("text/csv", "text/comma-separated-values,text/plain", ".c
 
 shinyUI(
   fluidPage(
-    titlePanel("Easy join"),
+    titlePanel("Easy Join"),
     sidebarLayout(
       sidebarPanel(
-        fileInput("file1", "CSV file1", accept = file.input.accept),
-        fileInput("file2", "CSV file2", accept = file.input.accept),
+
+        fileInput("file1", "CSV file1(Left)", accept = file.input.accept),
+        fileInput("file2", "CSV file2(Right)", accept = file.input.accept),
+        
         tags$hr(),
         htmlOutput("method1"),
         htmlOutput("method2"),

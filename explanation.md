@@ -1,39 +1,37 @@
 ## ezjoin
-Easy join
-
-### Description
+Easy join.
 Combine Data Sets.
 
+### Mutating Joins
+#### Left Join
+Join matching rows from CSV1 to CSV1.
 
+#### Right Join
+Join matching rows from CSV2 to CSV1.
 
+#### Innter Join
+Join data. Retain only rows in both sets.
 
-    
-### License 
+### Filtering Joins
+#### Semi Join
+All rows in a that have CSV1 match in CSV2.
 
-```
-MIT License
+#### Anti Join
+All rows in a that do not have CSV1 match in CSV2.
 
-Copyright (c) 2018 Toshihiro Iguchi
+### Set Operations
+#### Intersect
+Rows that appear in both CSV1 and CSV2.
 
-Permission is hereby granted, free of charge, to any person obtaining a copy
-of this software and associated documentation files (the "Software"), to deal
-in the Software without restriction, including without limitation the rights
-to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
-copies of the Software, and to permit persons to whom the Software is
-furnished to do so, subject to the following conditions:
+#### Union
+Rows that appear in either or both CSV1 and CSV2.
 
-The above copyright notice and this permission notice shall be included in all
-copies or substantial portions of the Software.
+#### Setdiff
+Rows that appear in CSV1 but not CSV2.
 
-THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
-IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
-FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
-AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
-LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
-OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
-SOFTWARE.
-```
+### Binding
+#### Bind Rows
+Append z to y as new rows.
 
-### Auther
-Toshihiro Iguchi
-
+#### Bind Cols
+Append CSV2 to CSV1 as new columns.
